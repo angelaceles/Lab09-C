@@ -21,7 +21,7 @@ namespace Demo09.Controllers
                 Date = x.Date,
                 Total = x.Total,
                 Active = x.Active,
-                IGV = x.IGV
+                IGV = (x.Total*100)/18
 
             }).ToList();
 
