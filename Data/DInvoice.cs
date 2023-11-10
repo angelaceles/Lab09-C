@@ -37,8 +37,7 @@ namespace Data
                                     CustomerId = reader.GetInt32(reader.GetOrdinal("Customer_Id")),
                                     Date = reader.GetDateTime(reader.GetOrdinal("Date")),
                                     Total = reader.GetDecimal(reader.GetOrdinal("Total")),
-                                    Active = reader.GetBoolean(reader.GetOrdinal("Active")),
-                                    IGV = reader.GetDecimal(reader.GetOrdinal("IGV"))
+                                    Active = reader.GetBoolean(reader.GetOrdinal("Active"))
                                 };
                                 result.Add(invoice);
                             }
